@@ -9,7 +9,7 @@ import copy
 import matplotlib.pyplot as plt
 import pickle
 
-from gym_art.quadrotor.quadrotor import QuadrotorEnv
+from quad_sim.quadrotor import QuadrotorEnv
 
 
 def play(quad_params, u_freqs, u_magns, obs_params, out_filename=None, render=True, plot=True, gravity=0., ep_time=1., conf_name=""):
