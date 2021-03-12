@@ -1,7 +1,7 @@
 from quad_sim.quad_utils import R2quat
 from quad_sim.quad_models import *
 from quad_sim.quadrotor_randomization import *
-# from simulators_investigation.utils import *
+from simulators_investigation.utils import *
 import sys
 import argparse
 import matplotlib.pyplot as plt
@@ -50,7 +50,7 @@ def test_rollout(
             env.init_random_state = False
             init_pos = np.array([0, 0, 0.05])
             init_vel = np.array([0, 0, 0])
-            init_rot = rpy2R(0, 0, 0) # np.eye(3) 
+            init_rot = rpy2R(0, 0, 0)   # np.eye(3)
             init_omega = np.array([0, 0, 0])
         if not random_quad:
             ## no random quad
